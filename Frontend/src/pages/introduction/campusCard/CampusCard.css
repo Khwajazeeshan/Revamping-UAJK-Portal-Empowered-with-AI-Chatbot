@@ -1,0 +1,112 @@
+.campuses {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.campus-card {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #153fb1ff 0%, #16165aff 100%);
+  border: 0.5px solid #dadada67;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: a;
+  transition: all 0.4s ease;
+}
+
+.campus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+.campus-card-image {
+  width: 50%;
+  height: 40vh;
+  margin-right: 20px;
+}
+
+.campus-card-image img {
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.campus-card:hover img {
+  transform: scale(1.05);
+}
+
+.campus-card-content {
+  color: #fff;
+  width: 50%;
+}
+
+.campus-card-subtitle {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.campus-card-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+/* ===== Responsive for ≤1000px ===== */
+@media (max-width: 1000px) {
+  .campus-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .campus-card-image {
+    width: 80%;
+    height: 30vh;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .campus-card-content {
+    width: 90%;
+  }
+
+  .campus-card-subtitle {
+    font-size: 2rem;
+  }
+
+  .campus-card-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===== Responsive for ≤500px ===== */
+@media (max-width: 500px) {
+  .campus-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .campus-card-image {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .campus-card-content {
+    width: 100%;
+  }
+
+  .campus-card-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .campus-card-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}

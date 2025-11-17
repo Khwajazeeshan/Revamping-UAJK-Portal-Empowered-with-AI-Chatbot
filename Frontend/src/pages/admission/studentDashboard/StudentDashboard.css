@@ -1,0 +1,160 @@
+.student-dashboard-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: var(--neutral-color);
+    font-family: a;
+    margin-top: 30px;
+    background-image: url("/assets/1.jpg");
+}
+
+.student-dashboard {
+    width: 60vw;
+    padding: 5rem 0;
+}
+
+.student-heading {
+    font-family: a;
+    color: var(--neutral-color);
+    font-weight: 100;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.student-data {
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 5rem 5rem 7rem;
+}
+
+.student-main-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 3rem;
+}
+
+.student-profile-photo {
+    width: 50%;
+}
+
+.student-name {
+    width: 50%;
+}
+
+.student-name>p:first-child {
+    font-size: 2rem;
+}
+
+.student-name>p:last-child {
+    font-size: 3rem;
+}
+
+.student-photo {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 9999px;
+
+}
+
+.student-data-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.student-data-field>p:first-child {
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.student-data-field>p:last-child {
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+/* 📱 For screens up to 1000px */
+@media (max-width: 1000px) {
+    .student-dashboard {
+        width: 80vw;
+        padding: 3rem 0;
+    }
+
+    .student-heading {
+        font-size: 2.5rem;
+    }
+
+    .student-data {
+        padding: 3rem;
+        border-radius: 25px;
+    }
+
+    .student-main-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .student-profile-photo,
+    .student-name {
+        width: 100%;
+    }
+
+    .student-photo {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .student-name>p:last-child {
+        font-size: 3.5rem;
+    }
+
+    .student-data-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-data-field>p {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+/* 📱 For screens up to 500px */
+@media (max-width: 500px) {
+    .student-dashboard {
+        width: 90vw;
+        padding: 2rem 0;
+    }
+
+    .student-heading {
+        font-size: 2rem;
+    }
+
+    .student-data {
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .student-photo {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .student-name>p:first-child {
+        font-size: 1.4rem;
+    }
+
+    .student-name>p:last-child {
+        font-size: 2.5rem;
+    }
+
+    .student-data-field>p {
+        font-size: 1.4rem;
+    }
+}

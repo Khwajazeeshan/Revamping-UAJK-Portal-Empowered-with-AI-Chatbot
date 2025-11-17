@@ -1,0 +1,156 @@
+.login-container {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/assets/1.jpg") center/cover no-repeat;
+    padding: 2rem;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(10, 25, 75, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    padding: 2.5rem;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-heading {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem 0;
+}
+
+.login-input label {
+    color: #e0e0e0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
+
+.login-input input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-input input::placeholder {
+    color: #ddd;
+}
+
+.login-input input:focus {
+    outline: none;
+    border-color: #4da3ff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.login-btn {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.login-btn button {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    border: none;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn button:hover {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    transform: translateY(-2px);
+}
+
+.login-extra {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-extra a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.login-extra a:hover {
+    color: #93c5fd;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1000px) {
+    .login-form {
+        padding: 2rem;
+        max-width: 400px;
+    }
+
+    .login-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .login-form {
+        padding: 1.8rem;
+        max-width: 95%;
+    }
+
+    .login-heading {
+        font-size: 1.8rem;
+    }
+
+    .login-input input {
+        font-size: 0.95rem;
+    }
+}
+
+.error-text {
+    color: rgb(249, 154, 154);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}

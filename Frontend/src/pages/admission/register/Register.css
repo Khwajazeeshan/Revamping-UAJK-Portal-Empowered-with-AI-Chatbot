@@ -1,0 +1,171 @@
+.register-main-container {
+    width: 100%;
+    min-height: 100vh;
+    background: url("/assets/1.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    margin-top: 100px;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(10, 25, 75, 0.9);
+    border-radius: 20px;
+    padding: 3rem 4rem 5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.register-personal-info>h2,
+.register-academic>h2,
+.register-media>h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #cbd5e1;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    border-left: 4px solid #2563eb;
+    padding-left: 0.8rem;
+}
+
+.register-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem 0;
+}
+
+.register-input label {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 0.4rem;
+}
+
+.register-input input,
+.register-input select {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.register-input input::placeholder {
+    color: #ddd;
+}
+
+.register-input input:focus,
+.register-input select:focus {
+    outline: none;
+    border-color: #4da3ff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.register-dpts {
+    margin-bottom: 1rem;
+}
+
+.register-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.register-btn button {
+    width: 200px;
+    height: 3.2rem;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    border: none;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.register-btn button:hover {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    transform: translateY(-2px);
+}
+
+/* Error message */
+.register-form p {
+    color: #ff8080;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .register-form {
+        max-width: 700px;
+        padding: 2.5rem 3rem;
+    }
+
+    .register-heading {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .register-form {
+        max-width: 95%;
+        padding: 2rem;
+    }
+
+    .register-heading {
+        font-size: 2rem;
+    }
+
+    .register-input input,
+    .register-input select {
+        font-size: 0.95rem;
+    }
+}
+
+.error-text {
+    color: rgb(249, 154, 154);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}

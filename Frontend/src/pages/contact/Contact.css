@@ -1,0 +1,189 @@
+.contact-page {
+    font-family: "Poppins", sans-serif;
+    --primary-color: #2d4ca1;
+    --secondary-color: #0f1c53;
+    --accent-color: #00eaff;
+    --text-light: #dbe3ff;
+    color: var(--text-light);
+    padding: 110px 20px;
+    /* min-height: 100vh; */
+    background: linear-gradient(135deg, #1c1c6d 0%, #143ba7 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Title */
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Contact Sections */
+.section {
+    background: rgba(21, 63, 177, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 5px solid rgb(45, 87, 254);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    margin: 35px 50px;
+    padding: 40px 80px;
+    width: 85%;
+    max-width: 1000px;
+    transition: all 0.5s ease;
+}
+
+.section:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-left-color: 5px solid rgb(34, 72, 225);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(90deg, #fcfcfc, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Individual Office Blocks */
+.office {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 22px 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.office:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transform: translateX(5px);
+}
+
+.office:last-child {
+    border-bottom: none;
+}
+
+/* Titles inside each office */
+.office h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Person name */
+.person {
+    color: var(--accent-color);
+    margin: 5px 0 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* Contact Info Details */
+.contact-info {
+    margin-left: 12px;
+    line-height: 1.8;
+}
+
+.contact-info span {
+    display: block;
+    margin: 4px 0;
+    color: #d1d9ff;
+    font-size: 1.05rem;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+/* Add subtle glowing effect */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.section:hover::before {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .contact-page {
+        padding-top: 140px;
+    }
+
+    .section {
+        padding: 30px 40px;
+        margin: 20px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 25px 20px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .office h3 {
+        font-size: 1.2rem;
+    }
+
+    .person {
+        font-size: 1rem;
+    }
+
+    .contact-info span {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,142 @@
+.admin-dashboard-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    background-image: url("/assets/1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 1rem;
+    margin-top: 70px;
+}
+
+/* Dashboard box */
+.admin-dashboard {
+    width: 99%;
+    /* max-width: 1300px; */
+    background: #222f48;
+    backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.ad-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Table Wrapper */
+.ad-table-wrapper {
+    overflow-x: auto;
+    border-radius: 1rem;
+}
+
+/* Table Styling */
+.ad-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.ad-table th {
+    background: linear-gradient(to right, #1c4cb2, #2264ce);
+    color: white;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.ad-table td {
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+}
+
+.ad-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ad-table tr:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transition: 0.3s ease;
+}
+
+.ad-table a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ad-table a:hover {
+    text-decoration: underline;
+}
+
+/* Scrollbar style */
+.ad-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.ad-table-wrapper::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}
+
+/* -------- Responsive -------- */
+
+/* For ≤1000px */
+@media (max-width: 1000px) {
+    .admin-dashboard {
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .ad-heading {
+        font-size: 2rem;
+    }
+
+    .ad-table th,
+    .ad-table td {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+    }
+}
+
+/* For ≤500px */
+@media (max-width: 500px) {
+    .admin-dashboard {
+        padding: 1.5rem 1rem;
+    }
+
+    .ad-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .ad-table {
+        min-width: 600px;
+    }
+
+    .ad-table-wrapper {
+        overflow-x: scroll;
+    }
+
+    .ad-table th,
+    .ad-table td {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+}

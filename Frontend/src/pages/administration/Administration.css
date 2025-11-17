@@ -1,0 +1,127 @@
+/* ===== Admin Offices Container ===== */
+#admin-offices-container {
+  width: 100%;
+  overflow: visible;
+  background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 100%);
+  color: white;
+}
+
+/* ===== Modern Sticky Nav ===== */
+.modern-nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  backdrop-filter: blur(14px);
+  background: rgba(12, 43, 117, 0.905);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  animation: fadeInNav 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Nav List ===== */
+.modern-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* ✅ 2 rows on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 3rem;
+  max-width: 90%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ===== Nav Buttons ===== */
+.modern-nav-btn {
+  background: none;
+  border: none;
+  color: #e2e8f0;
+  font-family: "a", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.modern-nav-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(90deg, #2c3a58, #1a3f6c); */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+  border-radius: 6px;
+}
+
+.modern-nav-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.modern-nav-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.7);
+}
+
+.modern-nav-btn span,
+.modern-nav-btn {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Responsive for ≤1000px ===== */
+@media (max-width: 1000px) {
+  .modern-nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .modern-nav-list {
+    gap: 1rem 2rem;
+  }
+
+  .modern-nav-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* ===== Responsive for ≤500px ===== */
+@media (max-width: 500px) {
+  .modern-nav {
+    padding: 0.8rem 1rem;
+    background: rgba(15, 23, 42, 0.9);
+  }
+
+  .modern-nav-list {
+    gap: 0.8rem 1.2rem;
+  }
+
+  .modern-nav-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    letter-spacing: 0.3px;
+  }
+}

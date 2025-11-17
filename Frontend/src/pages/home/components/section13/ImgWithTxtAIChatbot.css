@@ -1,0 +1,175 @@
+#sectionAIa {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+/* === LEFT SIDE === */
+.sectionAIa-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 40%;
+    font-family: a;
+    gap: 2rem;
+}
+
+.sectionAIa-left h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1.3;
+    color: var(--neutral-color);
+    margin: 0;
+}
+
+/* === CHAT BUTTON === */
+.chat-btn {
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    color: #fff;
+    font-family: a;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.chat-btn:hover {
+    background: linear-gradient(90deg, #3b82f6 0%, #93c5fd 100%);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.5);
+}
+
+.chat-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* === RIGHT SIDE === */
+.sectionAIa-right {
+    width: 60%;
+    position: relative;
+}
+
+.sectionAIa-right-center {
+    height: 65%;
+    width: 75%;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 1px solid rgba(59, 130, 246, 0.4); */
+}
+
+/* === SECTION AIb === */
+#sectionAIb {
+    width: 100vw;
+    position: relative;
+}
+
+.sectionAIb-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.rightAIb-content {
+    margin-bottom: 3rem;
+    font-family: a;
+    color: var(--neutral-color);
+}
+
+.rightAIb-content h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.rightAIb-content p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    width: 100%;
+    color: #dadada;
+}
+
+/* === RESPONSIVE BELOW 600PX === */
+@media only screen and (max-width: 1000px) {
+    #sectionAIa {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    /* Order: h1 → button → image */
+    .sectionAIa-left {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .sectionAIa-left h1 {
+        font-size: 9vw;
+        margin-bottom: 1rem;
+    }
+
+    .chat-btn {
+        order: 2;
+        font-size: 1rem;
+        padding: 0.8rem 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sectionAIa-right {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .sectionAIa-right-center {
+        width: 95%;
+        height: 60vw;
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+
+    #sectionAIb {
+        order: 4;
+        width: 100%;
+    }
+
+    .sectionAIb-right {
+        width: 90%;
+        padding: 1rem 0 2rem;
+        margin: auto;
+        align-items: center;
+    }
+
+    .rightAIb-content {
+        text-align: center;
+    }
+
+    .rightAIb-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .rightAIb-content p {
+        font-size: 1.2rem;
+        color: #e5e5e5;
+    }
+}

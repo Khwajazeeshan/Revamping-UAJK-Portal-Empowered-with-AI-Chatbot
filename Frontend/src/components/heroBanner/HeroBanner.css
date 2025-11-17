@@ -1,0 +1,110 @@
+.hero-banner {
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10rem;
+}
+
+.hero-content {
+    width: 55vw;
+}
+
+/* === Word-by-word subtitle animation === */
+.reveal-subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    overflow: hidden;
+}
+
+.reveal-subtitle span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.reveal-subtitle.visible span {
+    animation-play-state: running;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.hero-content h4 {
+    color: #fff;
+    font-family: a;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-family: a;
+    font-weight: 100;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+/* ===== Responsive for ≤1000px ===== */
+@media (max-width: 1000px) {
+    .hero-banner {
+        height: 60vh;
+        padding: 0 5rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 80vw;
+        margin: 0;
+    }
+
+    .hero-content h4 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ===== Responsive for ≤500px ===== */
+@media (max-width: 500px) {
+    .hero-banner {
+        height: 50vh;
+        padding: 0 2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h4 {
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+}

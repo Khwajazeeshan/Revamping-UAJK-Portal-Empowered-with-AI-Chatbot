@@ -1,0 +1,21 @@
+# deps & env
+node_modules/
+.env
+.env.*          
+
+# builds & caches
+dist/
+build/
+.next/
+coverage/
+.cache/
+.tmp/
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# editors/os
+.vscode/
+.idea/
+.DS_Store

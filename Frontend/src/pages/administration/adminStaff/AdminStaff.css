@@ -1,0 +1,182 @@
+/* ===== Title Section ===== */
+.admin-staff-title {
+  background: linear-gradient(90deg, #16165a 0%, #153fb1 100%);
+  color: #fff;
+  padding: 5rem 8rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.admin-staff-title h2 {
+  font-size: 4.5rem;
+  font-family: a;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===== Staff Grid ===== */
+.admin-staff-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 6rem 5rem;
+  background: linear-gradient(90deg, #17175f 0%, #133db0 100%);
+}
+
+/* ===== Individual Card ===== */
+.admin-staff-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  width: calc(33.33% - 2rem);
+  padding: 2rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.admin-staff-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
+}
+
+/* ===== Image Styling ===== */
+.admin-staff-img-wrap {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.admin-staff-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.admin-staff-card:hover .admin-staff-img {
+  transform: scale(1.07);
+}
+
+/* ===== Text Content ===== */
+.admin-staff-info {
+  margin-top: 1.5rem;
+  font-family: a;
+  color: #fff;
+}
+
+.admin-staff-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #60a5fa;
+  margin-bottom: 0.3rem;
+}
+
+.admin-staff-role {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #dbeafe;
+  margin-bottom: 1rem;
+}
+
+.admin-staff-contact {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.admin-staff-contact li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.admin-staff-contact li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+
+/* ===== Responsive ≤1000px ===== */
+@media (max-width: 1000px) {
+  .admin-staff-title {
+    padding: 4rem 3rem 1.5rem;
+  }
+
+  .admin-staff-title h2 {
+    font-size: 3.2rem;
+  }
+
+  .admin-staff-wrapper {
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .admin-staff-card {
+    width: calc(50% - 1.5rem);
+    padding: 1.8rem;
+  }
+
+  .admin-staff-img-wrap {
+    height: 45vh;
+  }
+
+  .admin-staff-name {
+    font-size: 2rem;
+  }
+
+  .admin-staff-role {
+    font-size: 1.2rem;
+  }
+
+  .admin-staff-contact {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== Responsive ≤500px ===== */
+@media (max-width: 500px) {
+  .admin-staff-title {
+    padding: 3rem 1.5rem 1rem;
+  }
+
+  .admin-staff-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .admin-staff-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .admin-staff-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .admin-staff-img-wrap {
+    height: 35vh;
+  }
+
+  .admin-staff-name {
+    font-size: 1.8rem;
+  }
+
+  .admin-staff-role {
+    font-size: 1rem;
+  }
+
+  .admin-staff-contact {
+    font-size: 0.95rem;
+  }
+}

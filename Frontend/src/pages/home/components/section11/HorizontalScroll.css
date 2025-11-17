@@ -1,0 +1,138 @@
+#section11 {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("/assets/1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+/* Heading */
+.event-container > h1 {
+    color: var(--neutral-color);
+    font-family: a;
+    font-weight: 100;
+    font-size: clamp(2rem, 4vw, 5rem);
+    text-align: center;
+    padding: 3rem 2rem 3rem 2rem;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+/* Card Container */
+.event-card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 10rem;
+    transition: all 0.3s ease;
+}
+
+.event-card-container a {
+    text-decoration: none;
+}
+
+/* Individual Card */
+.event-card {
+    min-width: 35vw;
+    height: 55vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.event-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.event-card h4 {
+    color: var(--neutral-color);
+    font-family: a;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.3;
+    margin-top: 1rem;
+}
+
+/* 1024px Tablet */
+@media only screen and (max-width: 1024px) {
+    .event-card-container {
+        padding: 0 4rem;
+        gap: 1.8rem;
+    }
+    .event-card {
+        min-width: 45vw;
+        height: 45vh;
+    }
+    .event-card h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 1000px breakpoint */
+@media only screen and (max-width: 1000px) {
+    .event-card-container {
+        flex-direction: column;
+        padding: 0 3rem;
+        gap: 2rem;
+    }
+    .event-card {
+        width: 80%;
+        height: 40vh;
+    }
+    .event-card img {
+        height: 100%;
+    }
+    .event-card h4 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+/* 768px Mobile */
+@media only screen and (max-width: 768px) {
+    #section11 {
+        padding-bottom: 5rem;
+    }
+    .event-card-container {
+        gap: 5rem;
+        padding: 0 2rem;
+    }
+    .event-card {
+        width: 100%;
+        height: 35vh;
+    }
+    .event-card img {
+        height: 100%;
+    }
+    .event-card h4 {
+        font-size: 1.3rem;
+    }
+    .event-container > h1 {
+        font-size: 2.3rem;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+}
+
+/* 500px Small Mobile */
+@media only screen and (max-width: 500px) {
+    .event-card {
+        width: 100%;
+        height: 30vh;
+    }
+    .event-card h4 {
+        font-size: 1.1rem;
+    }
+    .event-container > h1 {
+        font-size: 2rem;
+        padding: 2.5rem 1rem 1.5rem 1rem;
+    }
+}

@@ -1,0 +1,170 @@
+/* ===== Base Page Layout ===== */
+.admission-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0 8rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle background gradient differences */
+.admission-page-student {
+    background: linear-gradient(90deg, #153fb1ff 0%, #16165aff 100%)
+}
+
+.admission-page-admin {
+    background: linear-gradient(90deg, #16165a 0%, #153fb1 100%)
+}
+
+/* ===== Content ===== */
+.admission-content {
+    width: 75%;
+    max-width: 1100px;
+    color: #fff;
+    font-family: a;
+    z-index: 2;
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Typography ===== */
+.admission-title {
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.admission-text {
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+}
+
+/* ===== Buttons ===== */
+.admission-btns-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.admission-btns button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 9999px;
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: a;
+    cursor: pointer;
+    z-index: 10;
+    background-color: #fff;
+    color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.admission-btns button::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: top 0.3s ease;
+    z-index: 0;
+}
+
+.admission-btns-student button::before {
+    background-color: var(--primary-color);
+}
+
+.admission-btns button:hover::before {
+    top: 0;
+}
+
+.admission-btns span {
+    position: relative;
+    z-index: 1;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.admission-btns button:hover span {
+    color: #fff;
+}
+
+/* ===== Responsive (≤1000px) ===== */
+@media (max-width: 1000px) {
+    .admission-content {
+        width: 85%;
+    }
+
+    .admission-title {
+        font-size: 3rem;
+    }
+
+    .admission-text {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .admission-btns button {
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+/* ===== Responsive (≤500px) ===== */
+@media (max-width: 500px) {
+    .admission-page {
+        padding: 5rem 1rem 6rem;
+    }
+
+    .admission-content {
+        width: 95%;
+    }
+
+    .admission-title {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .admission-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 2.2rem;
+    }
+
+    .admission-btns-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .admission-btns button {
+        /* width: 80%; */
+        font-size: 1rem;
+        padding: 0.9rem 2rem;
+    }
+}
