@@ -1,9 +1,10 @@
 
 ---
+# Final Year Project
 
-# 🎓 Revamping the UAJK Portal Empowered with AI Chatbot
+## 🎓 Revamping the UAJK Portal Empowered with AI Chatbot
 
-## 📘 Project Overview
+### 📘 Project Overview
 
 This project modernizes the **University of Azad Jammu & Kashmir (UAJK)** online portal into an **intelligent, interactive, and AI-driven platform**.
 It provides a **3D virtual campus tour**, a **real-time AI chatbot**, and a **fully responsive web interface** for students, faculty, and visitors.
