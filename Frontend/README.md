@@ -1,9 +1,8 @@
 
 ---
-
 # 🎓 Revamping the UAJK Portal Empowered with AI Chatbot
 
-## 📘 Project Overview
+### 📘 Project Overview
 
 This project modernizes the **University of Azad Jammu & Kashmir (UAJK)** online portal into an **intelligent, interactive, and AI-driven platform**.
 It provides a **3D virtual campus tour**, a **real-time AI chatbot**, and a **fully responsive web interface** for students, faculty, and visitors.
@@ -52,7 +51,7 @@ The system enhances communication, accessibility, and digital engagement using *
 | Database       | MongoDB                   |
 | Authentication | JWT, bcrypt               |
 | AI/NLP         | Dialogflow / OpenAI API   |
-| Styling        | Tailwind CSS / Custom CSS |
+| Styling        | CSS3                      |
 | Environment    | dotenv                    |
 | Media Upload   | multer                    |
 | Security       | CORS, bcrypt hashing      |
@@ -118,8 +117,8 @@ User Query → NLP Engine → Intent Detection → Database Query → Response G
 ### 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/username/UAJK-AI-Portal.git
-cd UAJK-AI-Portal
+git clone https://github.com/Khwajazeeshan/Revamping-UAJK-Portal-Empowered-with-AI-Chatbot.git
+cd Revamping-UAJK-Portal-Empowered-with-AI-Chatbot
 ```
 
 ### 📦 Backend Setup
@@ -211,11 +210,11 @@ Backend: http://localhost:5000
 
 ## 🧑‍💻 Developers
 
-| Name                                       | Role                              | Reg. No          |
-| ------------------------------------------ | --------------------------------- | ---------------- |
-| **Khawaja Zeeshan**                        | Full Stack Developer              | 2021-UMDB-001051 |
-| **Zeeshan Younis**                         | Project Presentative              | 2021-UMDB-001243 |
-| **Supervisor:** Dr. Syed Zaki Hassan Kazmi | Assistant Professor, CS & IT Dept |                  |
+| Name                                       | Role                              | 
+| ------------------------------------------ | --------------------------------- | 
+| **Khawaja Zeeshan**                        | Full Stack Developer              | 
+| **Zeeshan Younis**                         | Project Presentative              | 
+| **Supervisor:** Dr. Syed Zaki Hassan Kazmi | Assistant Professor, CS & IT Dept |                 
 
 ---
 
