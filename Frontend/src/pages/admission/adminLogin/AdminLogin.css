@@ -1,0 +1,148 @@
+.admin-login-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/assets/1.jpg") center/cover no-repeat;
+    padding: 2rem;
+}
+
+.admin-form {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(10, 25, 75, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 4.5rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.admin-heading {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.admin-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1.2rem 0;
+}
+
+.admin-input label {
+    color: #e0e0e0;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.admin-input input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.admin-input input::placeholder {
+    color: #ddd;
+}
+
+.admin-input input:focus {
+    outline: none;
+    border-color: #4da3ff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.admin-btn {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.admin-btn button {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    border: none;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-btn button:hover {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    transform: translateY(-2px);
+}
+
+.admin-error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1000px) {
+    .admin-form {
+        max-width: 400px;
+        padding: 2rem;
+    }
+
+    .admin-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .admin-form {
+        max-width: 95%;
+        padding: 1.8rem;
+    }
+
+    .admin-heading {
+        font-size: 1.8rem;
+    }
+
+    .admin-input input {
+        font-size: 0.95rem;
+    }
+}
+
+
+.error-text {
+    color: rgb(249, 154, 154);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
