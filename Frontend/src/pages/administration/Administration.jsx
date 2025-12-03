@@ -3,7 +3,7 @@ import "./Administration.css"
 
 import HeroBanner from "../../components/heroBanner/HeroBanner"
 import AdminStaff from './adminStaff/AdminStaff'
-import Section2 from '../home/components/section2/section2'
+import Section2 from '../home/components/section2/Section2'
 import AdminMain from './adminMain/AdminMain'
 
 import { useState } from 'react'
