@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Introduction.css'
 
 import HeroBanner from '../../components/heroBanner/HeroBanner'
-import Section2 from '../home/components/section2/section2'
+import Section2 from '../home/components/section2/Section2'
 import TitleWithTxt from './titleWithTxt/TitleWithTxt'
 import CampusCard from './campusCard/CampusCard'
 import Chatbot from '../../pages/chatbot/chatbot'
