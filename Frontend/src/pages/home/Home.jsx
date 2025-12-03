@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Hero from "./components/Hero/Hero";
-import Section2 from "./components/section2/section2";
+import Section2 from "./components/section2/Section2";
 import ScrollingVideo from "./components/section3/ScrollingVideo";
 import Section7 from "./components/section7/Section7";
 import ImgWithTxt from "./components/section9/ImgWithTxt";
