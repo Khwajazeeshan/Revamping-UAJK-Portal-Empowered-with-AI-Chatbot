@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './introduction.css'
+import './Introduction.css'
 
 import HeroBanner from '../../components/heroBanner/HeroBanner'
 import Section2 from '../home/components/section2/section2'
