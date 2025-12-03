@@ -2,7 +2,7 @@ import React from 'react'
 import "./Messages.css"
 import HeroBanner from '../../components/heroBanner/HeroBanner'
 import ImgWithTxt from '../home/components/section9/ImgWithTxt'
-import Section2 from '../home/components/section2/section2'
+import Section2 from '../home/components/section2/Section2'
 
 import { useState } from 'react'
 import Chatbot from '../../pages/chatbot/chatbot'
